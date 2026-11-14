@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Shehar ka naam likhein (e.g., Mumbai)">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Current Weather Section -->
+        <div id="current-weather" class="weather-card hidden">
+            <h2 id="city-name"></h2>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+        </div>
+
+        <!-- 5-Day Forecast Section -->
+        <h3 id="forecast-title" class="hidden">5-Day Forecast</h3>
+        <div id="forecast-container" class="forecast-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
